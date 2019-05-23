@@ -1,0 +1,708 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* front_office_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23 07:31+0000\n"
+"PO-Revision-Date: 2019-05-23 07:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_visit_count
+msgid "# Visits"
+msgstr "# Visits"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<b>In Out Details</b>"
+msgstr "<b>In Out Details</b>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_property_label
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<b>Personal Belongings</b>"
+msgstr "<b>Personal Belongings</b>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<b>Visitor Report</b>"
+msgstr "<b>Visitor Report</b>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<span>Check In  : </span>"
+msgstr "<span>Check In  : </span>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<span>Check Out : </span>"
+msgstr "<span>Check Out : </span>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<span>Department    : </span>"
+msgstr "<span>Department    : </span>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<span>Email  : </span>"
+msgstr "<span>Email  : </span>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<span>Meeting With     : </span>"
+msgstr "<span>Meeting With     : </span>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<span>Visitor: </span>"
+msgstr "<span>Visitor: </span>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "<span>phone: </span>"
+msgstr "<span>phone: </span>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_label
+msgid "<strong>Department : </strong>"
+msgstr "<strong>Department : </strong>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_label
+msgid "<strong>Meeting With : </strong>"
+msgstr "<strong>Meeting With : </strong>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_label
+msgid "<strong>Phone: </strong>"
+msgstr "<strong>Phone: </strong>"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_label
+msgid "<strong>Visitor ID : </strong>"
+msgstr "<strong>Visitor ID : </strong>"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_visit_visitor_belongings
+msgid "Add the belongings details here."
+msgstr "Add the belongings details here."
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+msgid "Address"
+msgstr "Dirección"
+
+#. module: front_office_management
+#: selection:fo.belongings,permission:0
+msgid "Allowed"
+msgstr "Allowed"
+
+#. module: front_office_management
+#: selection:fo.belongings,permission:0
+msgid "Allowed With Permission"
+msgstr "Allowed With Permission"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_belongings_id_fov_employee
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_belongings_id_fov_visitor
+#: model:ir.ui.view,arch_db:front_office_management.fo_belongings_form_view
+msgid "Belongings"
+msgstr "Belongings"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_form_view
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: front_office_management
+#: selection:fo.property.counter,state:0
+#: selection:fo.visit,state:0
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_form_view
+msgid "Check In"
+msgstr "Check In"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_check_in_date
+msgid "Check In Time"
+msgstr "Check In Time"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_form_view
+msgid "Check In/Out Details"
+msgstr "Check In/Out Details"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_form_view
+msgid "Check Out"
+msgstr "Check Out"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_check_out_date
+msgid "Check Out Time"
+msgstr "Check Out Time"
+
+#. module: front_office_management
+#: selection:fo.visit,state:0
+msgid "Checked In"
+msgstr "Checked In"
+
+#. module: front_office_management
+#: selection:fo.visit,state:0
+msgid "Checked Out"
+msgstr "Checked Out"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_city
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+msgid "City"
+msgstr "Ciudad"
+
+#. module: front_office_management
+#: model:ir.actions.act_window,help:front_office_management.fo_visitor_action
+msgid "Click to Create New Visitor."
+msgstr "Click to Create New Visitor."
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_id_proof_code
+msgid "Code"
+msgstr "Código"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_company_info
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_filter
+msgid "Company"
+msgstr "Compañía"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_property_count
+#: model:ir.ui.view,arch_db:front_office_management.report_property_label
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "Count"
+msgstr "Cuenta"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_belongings_property_count
+msgid "Count of property"
+msgstr "Count of property"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_country_id
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+msgid "Country"
+msgstr "País"
+
+#. module: front_office_management
+#: model:ir.actions.act_window,help:front_office_management.fo_visit_action
+msgid "Create  Visits."
+msgstr "Create  Visits."
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_create_uid
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_create_uid
+#: model:ir.model.fields,field_description:front_office_management.field_fo_purpose_create_uid
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_create_uid
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_create_uid
+#: model:ir.model.fields,field_description:front_office_management.field_id_proof_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_create_date
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_create_date
+#: model:ir.model.fields,field_description:front_office_management.field_fo_purpose_create_date
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_create_date
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_create_date
+#: model:ir.model.fields,field_description:front_office_management.field_id_proof_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_date
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_filter
+msgid "Date"
+msgstr "Fecha"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_department
+msgid "Department"
+msgstr "Departamento"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.report_property_label
+msgid "Department :"
+msgstr "Department :"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_purpose_description
+msgid "Description Of Purpose"
+msgstr "Description Of Purpose"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_purpose_description
+msgid "Description for the Purpose."
+msgstr "Description for the Purpose."
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_display_name
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_display_name
+#: model:ir.model.fields,field_description:front_office_management.field_fo_purpose_display_name
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_display_name
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_display_name
+#: model:ir.model.fields,field_description:front_office_management.field_id_proof_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: front_office_management
+#: selection:fo.property.counter,state:0
+#: selection:fo.visit,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_email
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_email
+msgid "Email"
+msgstr "Email"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_employee
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_filter
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_belongings_property_name
+msgid "Employee belongings name"
+msgstr "Employee belongings name"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_visit_reason
+msgid "Enter the reason for visit"
+msgstr "Enter the reason for visit"
+
+#. module: front_office_management
+#: model:ir.ui.menu,name:front_office_management.front_office_mgmnt_main
+msgid "Front Office"
+msgstr "Front Office"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+msgid "FullName"
+msgstr "FullName"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_filter
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_filter
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_filter
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_id
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_id
+#: model:ir.model.fields,field_description:front_office_management.field_fo_purpose_id
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_id
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_id
+#: model:ir.model.fields,field_description:front_office_management.field_id_proof_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_id_proof_no
+msgid "ID Number"
+msgstr "ID Number"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_id_proof
+#: model:ir.ui.view,arch_db:front_office_management.fo_id_proof_form_view
+msgid "ID Proof"
+msgstr "ID Proof"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_visitor_id_proof_no
+msgid "Id proof number"
+msgstr "Id proof number"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_property_counter_state
+msgid "If the employee taken the belongings to the company change state to \"\"Taken In\"\"when he/she leave office change the state to \"\"Taken out\"\""
+msgstr "If the employee taken the belongings to the company change state to \"\"Taken In\"\"when he/she leave office change the state to \"\"Taken out\"\""
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_visitor_image
+msgid "Image"
+msgstr "Imagen"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_form_view
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_form_view
+msgid "Items"
+msgstr "Elementos"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings___last_update
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter___last_update
+#: model:ir.model.fields,field_description:front_office_management.field_fo_purpose___last_update
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit___last_update
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor___last_update
+#: model:ir.model.fields,field_description:front_office_management.field_id_proof___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_write_uid
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_write_uid
+#: model:ir.model.fields,field_description:front_office_management.field_fo_purpose_write_uid
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_write_uid
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_write_uid
+#: model:ir.model.fields,field_description:front_office_management.field_id_proof_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_write_date
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_write_date
+#: model:ir.model.fields,field_description:front_office_management.field_fo_purpose_write_date
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_write_date
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_write_date
+#: model:ir.model.fields,field_description:front_office_management.field_id_proof_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_visiting_person
+msgid "Meeting With"
+msgstr "Meeting With"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_purpose_name
+msgid "Meeting purpose in short term.eg:Meeting."
+msgstr "Meeting purpose in short term.eg:Meeting."
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_id_proof_id_proof
+#: model:ir.ui.view,arch_db:front_office_management.report_property_label
+#: model:ir.ui.view,arch_db:front_office_management.report_visitor_report
+msgid "Name"
+msgstr "Nombre"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_kanban_view
+#: model:ir.ui.view,arch_db:front_office_management.report_property_label
+msgid "Name :"
+msgstr "Name :"
+
+#. module: front_office_management
+#: code:addons/front_office_management/models/fo_visit.py:18
+#: code:addons/front_office_management/models/fo_visit.py:42
+#, python-format
+msgid "New"
+msgstr "New"
+
+#. module: front_office_management
+#: code:addons/front_office_management/models/fo_property_counter.py:48
+#, python-format
+msgid "No property can be taken in."
+msgstr "No property can be taken in."
+
+#. module: front_office_management
+#: selection:fo.belongings,permission:0
+msgid "Not Allowed"
+msgstr "Not Allowed"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_permission
+msgid "Permission"
+msgstr "Permission"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_visitor_belongings
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_visitor_belongings
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_form_view
+msgid "Personal Belongings"
+msgstr "Personal Belongings"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_form_view
+msgid "Personal belongings"
+msgstr "Personal belongings"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_phone
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_phone
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_kanban_view
+msgid "Phone:"
+msgstr "Teléfono:"
+
+#. module: front_office_management
+#: code:addons/front_office_management/models/fo_property_counter.py:43
+#, python-format
+msgid "Please Add the Count."
+msgstr "Please Add the Count."
+
+#. module: front_office_management
+#: sql_constraint:fo.visitor:0
+msgid "Please give the correct data !"
+msgstr "Please give the correct data !"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_property_name
+msgid "Property"
+msgstr "Propiedad"
+
+#. module: front_office_management
+#: model:ir.actions.act_window,name:front_office_management.fo_property_counter_action
+#: model:ir.ui.menu,name:front_office_management.fo_property_counter_menu
+#: model:ir.ui.menu,name:front_office_management.fo_property_counter_menu_child
+msgid "Property Counter"
+msgstr "Property Counter"
+
+#. module: front_office_management
+#: model:ir.model,name:front_office_management.model_fo_property_counter
+msgid "Property Details"
+msgstr "Property Details"
+
+#. module: front_office_management
+#: model:ir.actions.report,name:front_office_management.action_print_property_label
+msgid "Property Label"
+msgstr "Property Label"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_purpose_name
+msgid "Purpose"
+msgstr "Purpose"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_reason
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_form_view
+msgid "Purpose Of Visit"
+msgstr "Purpose Of Visit"
+
+#. module: front_office_management
+#: model:ir.module.category,name:front_office_management.module_fo_front_office
+msgid "Reception"
+msgstr "Reception"
+
+#. module: front_office_management
+#: model:res.groups,name:front_office_management.group_receptionist
+msgid "Receptionist"
+msgstr "Receptionist"
+
+#. module: front_office_management
+#: model:ir.actions.act_window,help:front_office_management.fo_property_counter_action
+msgid "Record Personal Belongings."
+msgstr "Record Personal Belongings."
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_filter
+msgid "Search"
+msgstr "Búsqueda"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_filter
+msgid "Search Visitors"
+msgstr "Search Visitors"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_filter
+msgid "Search Visits"
+msgstr "Search Visits"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_belongings_number
+msgid "Sl"
+msgstr "Sl"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_property_counter_state
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_state
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_state_id
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_filter
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_filter
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_filter
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+msgid "State"
+msgstr "Estado"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_street
+msgid "Street"
+msgstr "Calle"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+msgid "Street 2..."
+msgstr "Calle 2..."
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+msgid "Street..."
+msgstr "Calle..."
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_street2
+msgid "Street2"
+msgstr "Calle2"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_form_view
+msgid "Take In"
+msgstr "Take In"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_form_view
+msgid "Take Out"
+msgstr "Take Out"
+
+#. module: front_office_management
+#: selection:fo.property.counter,state:0
+msgid "Taken In"
+msgstr "Taken In"
+
+#. module: front_office_management
+#: selection:fo.property.counter,state:0
+msgid "Taken out"
+msgstr "Taken out"
+
+#. module: front_office_management
+#: model:ir.actions.act_window,help:front_office_management.fo_visit_action
+msgid "The check in time will be automatically filled when the visitor check in to the office."
+msgstr "The check in time will be automatically filled when the visitor check in to the office."
+
+#. module: front_office_management
+#: model:ir.actions.act_window,help:front_office_management.fo_visit_action
+msgid "The check out time automatically filled when the visitor check out from office."
+msgstr "The check out time automatically filled when the visitor check out from office."
+
+#. module: front_office_management
+#: model:ir.actions.act_window,name:front_office_management.fo_today_visit_action
+#: model:ir.ui.menu,name:front_office_management.fo_today_visit_menu
+#: model:ir.ui.menu,name:front_office_management.fo_today_visit_menu_child
+msgid "Today's Visits"
+msgstr "Today's Visits"
+
+#. module: front_office_management
+#: model:ir.model,name:front_office_management.model_fo_visit
+msgid "Visit"
+msgstr "Visit"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_filter
+msgid "Visiting Person"
+msgstr "Visiting Person"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visiting_purpose_form_view
+msgid "Visiting Purpose"
+msgstr "Visiting Purpose"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_visitor_company_info
+msgid "Visiting persons company details"
+msgstr "Visiting persons company details"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_visitor
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_name
+#: model:ir.ui.menu,name:front_office_management.visitor_menu
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_filter
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_filter
+msgid "Visitor"
+msgstr "Visitor"
+
+#. module: front_office_management
+#: model:ir.ui.menu,name:front_office_management.visitor_mgmnt_menu
+msgid "Visitor Management"
+msgstr "Visitor Management"
+
+#. module: front_office_management
+#: model:ir.actions.report,name:front_office_management.action_print_visit_card
+msgid "Visitor Pass"
+msgstr "Visitor Pass"
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_visit_check_in_date
+msgid "Visitor check in time automatically fills when he checked in to the office."
+msgstr "Visitor check in time automatically fills when he checked in to the office."
+
+#. module: front_office_management
+#: model:ir.model.fields,help:front_office_management.field_fo_visit_check_out_date
+msgid "Visitor check out time automatically fills when he checked out from the office."
+msgstr "Visitor check out time automatically fills when he checked out from the office."
+
+#. module: front_office_management
+#: model:ir.actions.act_window,name:front_office_management.fo_visitor_action
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_tree_view
+msgid "Visitors"
+msgstr "Visitors"
+
+#. module: front_office_management
+#: model:ir.actions.report,name:front_office_management.action_print_visit_report
+msgid "Visitors Report"
+msgstr "Visitors Report"
+
+#. module: front_office_management
+#: model:ir.actions.act_window,name:front_office_management.fo_visit_action
+#: model:ir.ui.menu,name:front_office_management.fo_visit_menu
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_form_view
+#: model:ir.ui.view,arch_db:front_office_management.fo_property_counter_tree_view
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_form_view
+#: model:ir.ui.view,arch_db:front_office_management.fo_visit_tree_view
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+msgid "Visits"
+msgstr "Visitas"
+
+#. module: front_office_management
+#: model:ir.ui.view,arch_db:front_office_management.fo_visitor_form_view
+msgid "ZIP"
+msgstr "C.P."
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visitor_zip
+msgid "Zip"
+msgstr "C.P."
+
+#. module: front_office_management
+#: model:ir.model,name:front_office_management.model_fo_belongings
+msgid "fo.belongings"
+msgstr "fo.belongings"
+
+#. module: front_office_management
+#: model:ir.model,name:front_office_management.model_fo_purpose
+msgid "fo.purpose"
+msgstr "fo.purpose"
+
+#. module: front_office_management
+#: model:ir.model,name:front_office_management.model_fo_visitor
+msgid "fo.visitor"
+msgstr "fo.visitor"
+
+#. module: front_office_management
+#: model:ir.model,name:front_office_management.model_id_proof
+msgid "id.proof"
+msgstr "id.proof"
+
+#. module: front_office_management
+#: model:ir.model.fields,field_description:front_office_management.field_fo_visit_name
+msgid "sequence"
+msgstr "sequence"
+
