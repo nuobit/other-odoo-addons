@@ -22,7 +22,7 @@
 #############################################################################
 {
     'name': "Front Office Management",
-    'version': '11.0.1.0.0',
+    'version': '11.0.1.0.1',
     'summary': """Manage Front Office Operations:Visitors, Devices Carrying Register, Actions""",
     'description': """Helps You To Manage Front Office Operations""",
     'author': "Cybrosys Techno Solutions",
