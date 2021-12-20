@@ -6,7 +6,7 @@ odoo.define('swipe_images_backend', function(require) {
     var field_utils = require('web.field_utils');
 
     imageWidget.include({
-        _render: function() {
+        start: function() {
             var self = this;
             this._super.apply(this, arguments);
             if (this.mode === 'readonly') {
