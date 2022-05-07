@@ -106,7 +106,8 @@
             </field>
         </record>
 
-        <menuitem id="front_office_mgmnt_main" name="Front Office" sequence="2"/>
+        <menuitem id="front_office_mgmnt_main" name="Front Office" sequence="2"
+                  web_icon="front_office_management,static/description/assets/icons/app.png"/>
         <menuitem id="visitor_mgmnt_menu" name="Visitor Management" parent="front_office_mgmnt_main" sequence="1"/>
         <menuitem id="visitor_menu" name="Visitor" parent="visitor_mgmnt_menu" action="fo_visitor_action"
                   groups="base.group_user" sequence="1"/>
