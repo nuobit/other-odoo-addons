@@ -1,11 +1,4 @@
 # -*- coding: utf-8 -*-
-##############################################################################
-#
-#    Cybrosys Technologies Pvt. Ltd.
-#    Copyright (C) 2017-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-#    Maintainer: Cybrosys Technologies (<https://www.cybrosys.com>)
-##############################################################################
-
 from odoo import models, fields, api
 
 
@@ -31,7 +24,6 @@ class VisitorDetails(models.Model):
         ('field_uniq_email_and_id_proof', 'unique (email,id_proof)', "Please give the correct data !"),
     ]
 
-    @api.multi
     def _no_visit_count(self):
         data = self.env['fo.visit'].search([('visitor', '=', self.ids), ('state', '!=', 'cancel')]).ids
         self.visit_count = len(data)

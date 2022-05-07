@@ -1,11 +1,4 @@
 # -*- coding: utf-8 -*-
-##############################################################################
-#
-#    Cybrosys Technologies Pvt. Ltd.
-#    Copyright (C) 2017-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-#    Maintainer: Cybrosys Technologies (<https://www.cybrosys.com>)
-##############################################################################
-
 import datetime
 from odoo import models, fields, api, _
 
@@ -43,16 +36,13 @@ class VisitDetails(models.Model):
             result = super(VisitDetails, self).create(vals)
             return result
 
-    @api.one
     def action_cancel(self):
         self.state = "cancel"
 
-    @api.one
     def action_check_in(self):
         self.state = "check_in"
         self.check_in_date = datetime.datetime.now()
 
-    @api.multi
     def action_check_out(self):
         self.state = "check_out"
         self.check_out_date = datetime.datetime.now()
@@ -85,7 +75,6 @@ class PersonalBelongings(models.Model):
         ('2', 'Allowed With Permission'),
         ], 'Permission', required=True, index=True, default='0', track_visibility='onchange')
 
-    @api.multi
     @api.depends('belongings_id_fov_visitor', 'belongings_id_fov_employee')
     def get_number(self):
         for visit in self.mapped('belongings_id_fov_visitor'):
