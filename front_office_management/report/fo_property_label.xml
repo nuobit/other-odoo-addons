@@ -16,8 +16,8 @@
                                             <tr>
                                                 <td width="100%">
                                                     <p style="text-align:center;padding-top:10px;">
-                                                        <img t-if="not o.employee.image" t-att-src="'/web/static/src/img/placeholder.png'" height="120" border="1" width="120"/>
-                                                        <img t-if="o.employee.image" t-att-src="'data:image/png;base64,%s' % o.employee.image" height="120" border="1" width="120"/>
+                                                        <img t-if="not o.employee.image_1920" t-att-src="'/web/static/src/img/placeholder.png'" height="120" border="1" width="120"/>
+                                                        <img t-if="o.employee.image_1920" t-att-src="image_data_uri( o.employee.image_1920)" class="float-left" alt="Logo" height="120" border="1" width="120" />
                                                     </p>
                                                     <p style="text-align:center;">
                                                        Name : <strong><span t-field="o.employee.name"/></strong>
@@ -26,7 +26,7 @@
                                                        Department : <strong><span t-field="o.employee.department_id.name"/></strong>
                                                     </p>
                                                     <h4 style="margin-left:50px"><b>Personal Belongings</b></h4>
-                                                     <table width="90%" style="border:1px solid black;margin-left:50px">
+                                                     <table width="90%" style="border:1px solid black;margin-left:15px">
                                                          <thead>
                                                             <th  style="border:1px solid black;" width="13%" >Name</th>
                                                             <th  style="border:1px solid black;" width="13%" >Count</th>

@@ -72,31 +72,9 @@
                 </tree>
             </field>
         </record>
-
-        <record id="fo_property_counter_filter" model="ir.ui.view">
-            <field name="name">Property Counter</field>
-            <field name="model">fo.property.counter</field>
-            <field name="type">search</field>
-            <field name="arch" type="xml">
-                <search string="Search">
-                    <separator orientation="vertical"/>
-                        <field name="employee" select="1"/>
-                        <field name="date" select="1"/>
-                        <field name="state" select="1"/>
-                    <newline/>
-                    <group expand="0" string="Group By..." colspan="11" col="11">
-                        <filter string="Employee" icon="terp-personal" domain="[]" context="{'group_by':'employee'}"/>
-                        <filter string="Date" icon="terp-personal" domain="[]" context="{'group_by':'date'}"/>
-                        <filter string="State" icon="terp-personal" domain="[]" context="{'group_by':'state'}"/>
-                    </group>
-                </search>
-            </field>
-        </record>
-
         <record model="ir.actions.act_window" id="fo_property_counter_action">
             <field name="name">Property Counter</field>
             <field name="res_model">fo.property.counter</field>
-            <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">Record Personal Belongings.

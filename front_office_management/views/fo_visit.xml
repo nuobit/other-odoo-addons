@@ -91,30 +91,9 @@
             </field>
         </record>
 
-        <record id="fo_visit_filter" model="ir.ui.view">
-            <field name="name">Visits</field>
-            <field name="model">fo.visit</field>
-            <field name="type">search</field>
-            <field name="arch" type="xml">
-                <search string="Search Visits">
-                    <separator orientation="vertical"/>
-                        <field name="visitor" select="1"/>
-                        <field name="state" select="1"/>
-                        <field name="visiting_person"/>
-                    <newline/>
-                    <group expand="0" string="Group By..." colspan="11" col="11">
-                        <filter string="Visitor" icon="terp-personal" domain="[]" context="{'group_by':'visitor'}"/>
-                        <filter string="State" icon="terp-personal" domain="[]" context="{'group_by':'state'}"/>
-                        <filter string="Visiting Person" icon="terp-personal" domain="[]" context="{'group_by':'visiting_person'}"/>
-                    </group>
-                </search>
-            </field>
-        </record>
-
         <record model="ir.actions.act_window" id="fo_visit_action">
             <field name="name">Visits</field>
             <field name="res_model">fo.visit</field>
-            <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">Create  Visits.
@@ -131,7 +110,6 @@
          <record id="fo_today_visit_action" model="ir.actions.act_window">
             <field name="name">Today's Visits</field>
             <field name="res_model">fo.visit</field>
-            <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="domain">[('check_in_date', '&gt;=',((context_today()-datetime.timedelta(days=0)).strftime('%Y-%m-%d 00:00:00'))),
              ('check_in_date', '&lt;=',((context_today()-datetime.timedelta(days=0)).strftime('%Y-%m-%d 23:59:59')))]

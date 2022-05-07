@@ -3,10 +3,10 @@
     <data>
         <template id="report_visitor_report">
              <t t-call="web.html_container">
+                 <t t-call="web.external_layout">
                  <t t-foreach="docs" t-as="o">
-                     <t t-call="web.external_layout">
                          <div class="page">
-                         <div class="oe_structure"/>
+                         <div class="oe_structure" />
 
                             <t t-if="o and 'company_id' in o">
                                 <t t-set="company" t-value="o.company_id"> </t>
@@ -14,13 +14,13 @@
                             <t t-if="not o or not 'company_id' in o">
                                 <t t-set="company" t-value="res_company"> </t>
                             </t>
-                            <h3 style="text-decoration:underline;text-align:center;"><b>Visitor Report</b></h3>
+                            <br />
+                            <h3 style="text-align:center;margin-top:50;"><b>Visitor Report</b></h3>
                              <br/>
-                             <br/>
-                             <table width="99%" style="margin-left:50px;margin-top:5px;border: None solid black;">
+                             <table width="100%" style="margin-left:50px;margin-top:5px;border: None solid black;">
                                  <tr class="tr2">
                                     <td style="width:50px;height:25px;" ><span>Visitor: </span><span t-att-style="style" t-esc="o.visitor.name"/></td>
-                                    <td style="width:50px;height:25px;" ><span>Email  : </span><span t-att-style="style" t-esc="o.email"/></td>
+                                    <td style="width:50px;height:25px;" ><span>Email: </span><span t-att-style="style" t-esc="o.email"/></td>
                                     <td style="width:50px;height:25px;" ><span>phone: </span><span t-att-style="style" t-esc="o.phone"/></td>
                                 </tr>
                                  <tr class="tr2">
@@ -55,7 +55,7 @@
                                 </tbody>
                              </table>
                          </div>
-                         <p style="page-break-after:always"></p>
+                         <p style="page-break-after:always"/>
                     </t>
                 </t>
              </t>
