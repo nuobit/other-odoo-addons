@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
         <record model="ir.ui.view" id="fo_visit_form_view">
@@ -7,41 +7,46 @@
             <field name="arch" type="xml">
                 <form string="Visits">
                     <header>
-                        <button name="action_check_in"
-                                string="Check In"
-                                type="object"
-                                states="draft"
-                                class="oe_highlight"
-                                />
+                        <button
+              name="action_check_in"
+              string="Check In"
+              type="object"
+              states="draft"
+              class="oe_highlight"
+            />
 
-                        <button name="action_check_out"
-                                string="Check Out"
-                                type="object"
-                                states="check_in"
-                                class="oe_highlight"
-                                />
-                         <button name="action_cancel"
-                                string="Cancel"
-                                type="object"
-                                states="draft"
-                                attrs = "{'invisible': [('state', 'in', ('check_in','check_out'))]}"/>
+                        <button
+              name="action_check_out"
+              string="Check Out"
+              type="object"
+              states="check_in"
+              class="oe_highlight"
+            />
+                         <button
+              name="action_cancel"
+              string="Cancel"
+              type="object"
+              states="draft"
+              attrs="{'invisible': [('state', 'in', ('check_in','check_out'))]}"
+            />
 
-                        <field name="state"
-                               widget="statusbar"
-                               statusbar_visible="draft,check_in,check_out,cancel"
-                              />
+                        <field
+              name="state"
+              widget="statusbar"
+              statusbar_visible="draft,check_in,check_out,cancel"
+            />
                     </header>
                     <sheet>
                         <div class="oe_title">
                             <h1>
-                                <field name="name" readonly="1"/>
+                                <field name="name" readonly="1" />
                             </h1>
                         </div>
                         <group>
                             <group>
-                                <field name="visitor"/>
-                                <field name="phone"/>
-                                <field name="email"/>
+                                <field name="visitor" />
+                                <field name="phone" />
+                                <field name="email" />
                             </group>
                             <group string="Check In/Out Details">
                                 <field name="check_in_date" />
@@ -50,29 +55,42 @@
                         </group>
                         <group string="Purpose Of Visit">
                             <group>
-                                <field name="visiting_person"/>
-                                <field name="department"/>
-                                <field name="reason" widget="many2many_tags"/>
+                                <field name="visiting_person" />
+                                <field name="department" />
+                                <field name="reason" widget="many2many_tags" />
                             </group>
                             <group>
                             </group>
                         </group>
                          <notebook>
                             <page string="Personal Belongings">
-                                <field name="visitor_belongings" widget="one2many_list" nolabel="1">
-                                    <tree decoration-success="permission == '0' or permission == '2'" decoration-danger="permission == '1'" string="Items" editable="bottom">
-                                        <field name="number"/>
-                                        <field name="property_name"/>
-                                        <field name="property_count"/>
-                                        <field name="permission"/>
+                                <field
+                  name="visitor_belongings"
+                  widget="one2many_list"
+                  nolabel="1"
+                >
+                                    <tree
+                    decoration-success="permission == '0' or permission == '2'"
+                    decoration-danger="permission == '1'"
+                    string="Items"
+                    editable="bottom"
+                  >
+                                        <field name="number" />
+                                        <field name="property_name" />
+                                        <field name="property_count" />
+                                        <field name="permission" />
                                     </tree>
                                 </field>
                             </page>
                          </notebook>
                     </sheet>
                     <div class="oe_chatter">
-                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
-                        <field name="message_ids" widget="mail_thread"/>
+                        <field
+              name="message_follower_ids"
+              widget="mail_followers"
+              groups="base.group_user"
+            />
+                        <field name="message_ids" widget="mail_thread" />
                     </div>
                 </form>
             </field>
@@ -82,11 +100,15 @@
             <field name="name">Visits</field>
             <field name="model">fo.visit</field>
             <field name="arch" type="xml">
-                <tree string="Visits" decoration-success="state == 'check_in'" decoration-muted="state == 'check_out'">
-                    <field name="visitor"/>
-                    <field name="reason"/>
-                    <field name="visiting_person"/>
-                    <field name="state"/>
+                <tree
+          string="Visits"
+          decoration-success="state == 'check_in'"
+          decoration-muted="state == 'check_out'"
+        >
+                    <field name="visitor" />
+                    <field name="reason" />
+                    <field name="visiting_person" />
+                    <field name="state" />
                 </tree>
             </field>
         </record>
@@ -111,7 +133,9 @@
             <field name="name">Today's Visits</field>
             <field name="res_model">fo.visit</field>
             <field name="view_mode">tree,form</field>
-            <field name="domain">[('check_in_date', '&gt;=',((context_today()-datetime.timedelta(days=0)).strftime('%Y-%m-%d 00:00:00'))),
+            <field
+        name="domain"
+      >[('check_in_date', '&gt;=',((context_today()-datetime.timedelta(days=0)).strftime('%Y-%m-%d 00:00:00'))),
              ('check_in_date', '&lt;=',((context_today()-datetime.timedelta(days=0)).strftime('%Y-%m-%d 23:59:59')))]
             </field>
          </record>
@@ -132,10 +156,10 @@
                     <sheet>
                         <group>
                             <group>
-                                <field name="property_name"/>
+                                <field name="property_name" />
                             </group>
                             <group>
-                                 <field name="property_count"/>
+                                 <field name="property_count" />
                             </group>
                         </group>
                     </sheet>
@@ -151,10 +175,10 @@
                     <sheet>
                         <group>
                             <group>
-                                <field name="id_proof"/>
+                                <field name="id_proof" />
                             </group>
                             <group>
-                                 <field name="code"/>
+                                 <field name="code" />
                             </group>
                         </group>
                     </sheet>
@@ -172,10 +196,10 @@
                     <sheet>
                         <group>
                             <group>
-                                <field name="name"/>
+                                <field name="name" />
                             </group>
                             <group>
-                                <field name="description"/>
+                                <field name="description" />
                             </group>
                         </group>
                     </sheet>

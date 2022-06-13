@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #############################################################################
 #
 #    Cybrosys Technologies Pvt. Ltd.
@@ -22,9 +21,3 @@
 from . import fo_visitor
 from . import fo_property_counter
 from . import fo_visit
-
-
-
-
-
-

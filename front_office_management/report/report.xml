@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
 
@@ -6,9 +6,13 @@
             <field name="name">Visitor Pass</field>
             <field name="model">fo.visit</field>
             <field name="report_type">qweb-pdf</field>
-            <field name="report_name">front_office_management.report_visitor_label</field>
-            <field name="report_file">front_office_management.report_visitor_label</field>
-            <field name="binding_model_id" ref="model_fo_visit"/>
+            <field
+        name="report_name"
+      >front_office_management.report_visitor_label</field>
+            <field
+        name="report_file"
+      >front_office_management.report_visitor_label</field>
+            <field name="binding_model_id" ref="model_fo_visit" />
             <field name="binding_type">report</field>
         </record>
 
@@ -16,9 +20,13 @@
             <field name="name">Visitors Report</field>
             <field name="model">fo.visit</field>
             <field name="report_type">qweb-pdf</field>
-            <field name="report_name">front_office_management.report_visitor_report</field>
-            <field name="report_file">front_office_management.report_visitor_report</field>
-            <field name="binding_model_id" ref="model_fo_visit"/>
+            <field
+        name="report_name"
+      >front_office_management.report_visitor_report</field>
+            <field
+        name="report_file"
+      >front_office_management.report_visitor_report</field>
+            <field name="binding_model_id" ref="model_fo_visit" />
             <field name="binding_type">report</field>
         </record>
 
@@ -26,9 +34,13 @@
             <field name="name">Property Label</field>
             <field name="model">fo.property.counter</field>
             <field name="report_type">qweb-pdf</field>
-            <field name="report_name">front_office_management.report_property_label</field>
-            <field name="report_file">front_office_management.report_property_label</field>
-            <field name="binding_model_id" ref="model_fo_property_counter"/>
+            <field
+        name="report_name"
+      >front_office_management.report_property_label</field>
+            <field
+        name="report_file"
+      >front_office_management.report_property_label</field>
+            <field name="binding_model_id" ref="model_fo_property_counter" />
             <field name="binding_type">report</field>
         </record>
 
