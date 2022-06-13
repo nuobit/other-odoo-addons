@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
 
@@ -10,7 +10,7 @@
 
         <record id="group_receptionist" model="res.groups">
             <field name="name">Receptionist</field>
-            <field name="category_id" ref="module_fo_front_office"/>
+            <field name="category_id" ref="module_fo_front_office" />
         </record>
 
     </data>
