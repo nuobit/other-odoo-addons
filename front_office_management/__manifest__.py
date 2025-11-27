@@ -27,7 +27,7 @@
     "author": "Cybrosys Techno Solutions",
     "maintainer": "Cybrosys Techno Solutions",
     "company": "Cybrosys Techno Solutions",
-    "website": "https://www.cybrosys.com",
+    "website": "https://github.com/nuobit/other-odoo-addons",
     "category": "Industries",
     "depends": ["base", "hr"],
     "data": [

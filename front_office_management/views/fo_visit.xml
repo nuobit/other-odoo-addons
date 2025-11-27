@@ -8,33 +8,33 @@
                 <form string="Visits">
                     <header>
                         <button
-              name="action_check_in"
-              string="Check In"
-              type="object"
-              states="draft"
-              class="oe_highlight"
-            />
+                            name="action_check_in"
+                            string="Check In"
+                            type="object"
+                            states="draft"
+                            class="oe_highlight"
+                        />
 
                         <button
-              name="action_check_out"
-              string="Check Out"
-              type="object"
-              states="check_in"
-              class="oe_highlight"
-            />
-                         <button
-              name="action_cancel"
-              string="Cancel"
-              type="object"
-              states="draft"
-              attrs="{'invisible': [('state', 'in', ('check_in','check_out'))]}"
-            />
+                            name="action_check_out"
+                            string="Check Out"
+                            type="object"
+                            states="check_in"
+                            class="oe_highlight"
+                        />
+                        <button
+                            name="action_cancel"
+                            string="Cancel"
+                            type="object"
+                            states="draft"
+                            attrs="{'invisible': [('state', 'in', ('check_in','check_out'))]}"
+                        />
 
                         <field
-              name="state"
-              widget="statusbar"
-              statusbar_visible="draft,check_in,check_out,cancel"
-            />
+                            name="state"
+                            widget="statusbar"
+                            statusbar_visible="draft,check_in,check_out,cancel"
+                        />
                     </header>
                     <sheet>
                         <div class="oe_title">
@@ -59,22 +59,21 @@
                                 <field name="department" />
                                 <field name="reason" widget="many2many_tags" />
                             </group>
-                            <group>
-                            </group>
+                            <group />
                         </group>
-                         <notebook>
+                        <notebook>
                             <page string="Personal Belongings">
                                 <field
-                  name="visitor_belongings"
-                  widget="one2many_list"
-                  nolabel="1"
-                >
+                                    name="visitor_belongings"
+                                    widget="one2many_list"
+                                    nolabel="1"
+                                >
                                     <tree
-                    decoration-success="permission == '0' or permission == '2'"
-                    decoration-danger="permission == '1'"
-                    string="Items"
-                    editable="bottom"
-                  >
+                                        decoration-success="permission == '0' or permission == '2'"
+                                        decoration-danger="permission == '1'"
+                                        string="Items"
+                                        editable="bottom"
+                                    >
                                         <field name="number" />
                                         <field name="property_name" />
                                         <field name="property_count" />
@@ -82,14 +81,14 @@
                                     </tree>
                                 </field>
                             </page>
-                         </notebook>
+                        </notebook>
                     </sheet>
                     <div class="oe_chatter">
                         <field
-              name="message_follower_ids"
-              widget="mail_followers"
-              groups="base.group_user"
-            />
+                            name="message_follower_ids"
+                            widget="mail_followers"
+                            groups="base.group_user"
+                        />
                         <field name="message_ids" widget="mail_thread" />
                     </div>
                 </form>
@@ -101,10 +100,10 @@
             <field name="model">fo.visit</field>
             <field name="arch" type="xml">
                 <tree
-          string="Visits"
-          decoration-success="state == 'check_in'"
-          decoration-muted="state == 'check_out'"
-        >
+                    string="Visits"
+                    decoration-success="state == 'check_in'"
+                    decoration-muted="state == 'check_out'"
+                >
                     <field name="visitor" />
                     <field name="reason" />
                     <field name="visiting_person" />
@@ -129,26 +128,26 @@
             </field>
         </record>
 
-         <record id="fo_today_visit_action" model="ir.actions.act_window">
+        <record id="fo_today_visit_action" model="ir.actions.act_window">
             <field name="name">Today's Visits</field>
             <field name="res_model">fo.visit</field>
             <field name="view_mode">tree,form</field>
             <field
-        name="domain"
-      >[('check_in_date', '&gt;=',((context_today()-datetime.timedelta(days=0)).strftime('%Y-%m-%d 00:00:00'))),
+                name="domain"
+            >[('check_in_date', '&gt;=',((context_today()-datetime.timedelta(days=0)).strftime('%Y-%m-%d 00:00:00'))),
              ('check_in_date', '&lt;=',((context_today()-datetime.timedelta(days=0)).strftime('%Y-%m-%d 23:59:59')))]
             </field>
-         </record>
+        </record>
 
-         <record model="ir.sequence" id="seq_lab_visit">
+        <record model="ir.sequence" id="seq_lab_visit">
             <field name="name">Visits</field>
             <field name="code">fo.visit</field>
             <field name="prefix">VID</field>
             <field name="padding">3</field>
             <field name="company_id" eval="False" />
-         </record>
+        </record>
 
-         <record model="ir.ui.view" id="fo_belongings_form_view">
+        <record model="ir.ui.view" id="fo_belongings_form_view">
             <field name="name">Belongings</field>
             <field name="model">fo.belongings</field>
             <field name="arch" type="xml">
@@ -159,7 +158,7 @@
                                 <field name="property_name" />
                             </group>
                             <group>
-                                 <field name="property_count" />
+                                <field name="property_count" />
                             </group>
                         </group>
                     </sheet>
@@ -167,7 +166,7 @@
             </field>
         </record>
         <!--Proof Form view-->
-         <record model="ir.ui.view" id="fo_id_proof_form_view">
+        <record model="ir.ui.view" id="fo_id_proof_form_view">
             <field name="name">ID Proof</field>
             <field name="model">id.proof</field>
             <field name="arch" type="xml">
@@ -178,7 +177,7 @@
                                 <field name="id_proof" />
                             </group>
                             <group>
-                                 <field name="code" />
+                                <field name="code" />
                             </group>
                         </group>
                     </sheet>

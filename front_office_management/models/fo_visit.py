@@ -51,7 +51,7 @@ class VisitDetails(models.Model):
     def create(self, vals):
         if vals:
             vals["name"] = self.env["ir.sequence"].next_by_code("fo.visit") or _("New")
-            result = super(VisitDetails, self).create(vals)
+            result = super().create(vals)
             return result
 
     def action_cancel(self):
