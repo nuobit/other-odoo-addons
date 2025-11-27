@@ -15,7 +15,7 @@
                             name="%(fo_visit_action)d"
                             type="action"
                             icon="fa-arrows-v"
-                            context="{'default_visitor': [active_id],'search_default_visitor': [active_id]}"
+                            context="{'default_visitor': [id],'search_default_visitor': [id]}"
                         >
                             <field
                                 name="visit_count"

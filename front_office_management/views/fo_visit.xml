@@ -13,7 +13,7 @@
                         name="action_check_in"
                         string="Check In"
                         type="object"
-                        states="draft"
+                        invisible="state != 'draft'"
                         class="oe_highlight"
                     />
 
@@ -21,15 +21,14 @@
                         name="action_check_out"
                         string="Check Out"
                         type="object"
-                        states="check_in"
+                        invisible="state != 'check-in'"
                         class="oe_highlight"
                     />
                     <button
                         name="action_cancel"
                         string="Cancel"
                         type="object"
-                        states="draft"
-                        attrs="{'invisible': [('state', 'in', ('check_in','check_out'))]}"
+                        invisible="state in ('check_in','check_out', 'draft')"
                     />
 
                     <field

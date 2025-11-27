@@ -51,7 +51,7 @@ class VisitDetails(models.Model):
         default="draft",
     )
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         if vals:
             vals["name"] = self.env["ir.sequence"].next_by_code("fo.visit") or _("New")

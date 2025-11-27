@@ -13,7 +13,7 @@
                         name="action_prop_in"
                         string="Take In"
                         type="object"
-                        states="draft"
+                        invisible="state != 'check-in'"
                         class="oe_highlight"
                     />
 
@@ -21,15 +21,14 @@
                         name="action_prop_out"
                         string="Take Out"
                         type="object"
-                        states="prop_in"
+                        invisible="state != 'prop_in'"
                         class="oe_highlight"
                     />
                     <button
                         name="action_cancel"
                         string="Cancel"
                         type="object"
-                        states="draft"
-                        attrs="{'invisible': [('state', 'in', ('prop_in','prop_out'))]}"
+                        invisible="state in ('prop_in','prop_out','draft')"
                     />
 
                     <field
