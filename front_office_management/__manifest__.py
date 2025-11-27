@@ -1,30 +1,14 @@
-#############################################################################
-#
-#    Cybrosys Technologies Pvt. Ltd.
-#
-#    Copyright (C) 2020-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-#    Author: Anusha P P (odoo@cybrosys.com)
-#
-#    You can modify it under the terms of the GNU AFFERO
-#    GENERAL PUBLIC LICENSE (AGPL v3), Version 3.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU AFFERO GENERAL PUBLIC LICENSE (AGPL v3) for more details.
-#
-#    You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
-#    (AGPL v3) along with this program.
-#    If not, see <http://www.gnu.org/licenses/>.
-#
-#############################################################################
+# Cybrosys Technologies - Anusha P P <odoo@cybrosys.com>
+# Copyright 2025 NuoBiT Solutions - Deniz Gallo <dgallo@nuobit.com>
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
+
 
 {
     "name": "Front Office Management",
-    "version": "14.0.1.0.0",
-    "summary": """Manage Front Office Operations:Visitors, Devices Carrying Register, Actions""",
-    "description": """Helps You To Manage Front Office Operations, Odoo14""",
-    "author": "Cybrosys Techno Solutions",
+    "version": "18.0.1.0.0",
+    "summary": """Manage Front Office Operations:
+    Visitors, Devices Carrying Register, Actions""",
+    "author": "Cybrosys Techno Solutions, NuoBiT Solutions SL",
     "maintainer": "Cybrosys Techno Solutions",
     "company": "Cybrosys Techno Solutions",
     "website": "https://github.com/nuobit/other-odoo-addons",
@@ -43,6 +27,4 @@
     ],
     "images": ["static/description/banner.png"],
     "license": "AGPL-3",
-    "installable": True,
-    "auto_install": False,
 }

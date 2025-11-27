@@ -1,0 +1,4 @@
+- [Cybrosys Technologies](https://www.cybrosys.com):
+  - Anusha P P <odoo@cybrosys.com>
+- [NuoBiT](https://www.nuobit.com):
+  - Deniz Gallo <dgallo@nuobit.com>

@@ -1,3 +1,7 @@
+# Cybrosys Technologies - Anusha P P <odoo@cybrosys.com>
+# Copyright 2025 NuoBiT Solutions - Deniz Gallo <dgallo@nuobit.com>
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
+
 from odoo import _, fields, models
 from odoo.exceptions import UserError
 
@@ -8,8 +12,8 @@ class VisitDetails(models.Model):
     _rec_name = "employee"
     _description = "Property Details"
 
-    employee = fields.Many2one("hr.employee", string="Employee", required=True)
-    date = fields.Date(string="Date", required=True)
+    employee = fields.Many2one("hr.employee", required=True)
+    date = fields.Date(required=True)
     visitor_belongings = fields.One2many(
         "fo.belongings",
         "belongings_id_fov_employee",
@@ -25,7 +29,8 @@ class VisitDetails(models.Model):
         ],
         tracking=True,
         default="draft",
-        help='If the employee taken the belongings to the company change state to ""Taken In""'
+        help="If the employee taken the belongings to the company "
+        'change state to ""Taken In""'
         'when he/she leave office change the state to ""Taken out""',
     )
 

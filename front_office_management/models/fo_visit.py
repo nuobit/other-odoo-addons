@@ -1,3 +1,7 @@
+# Cybrosys Technologies - Anusha P P <odoo@cybrosys.com>
+# Copyright 2025 NuoBiT Solutions - Deniz Gallo <dgallo@nuobit.com>
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
+
 import datetime
 
 from odoo import _, api, fields, models
@@ -9,9 +13,9 @@ class VisitDetails(models.Model):
     _description = "Visit"
 
     name = fields.Char(string="sequence", default=lambda self: _("New"))
-    visitor = fields.Many2one("fo.visitor", string="Visitor")
-    phone = fields.Char(string="Phone", required=True)
-    email = fields.Char(string="Email", required=True)
+    visitor = fields.Many2one("fo.visitor")
+    phone = fields.Char(required=True)
+    email = fields.Char(required=True)
     reason = fields.Many2many(
         "fo.purpose",
         string="Purpose Of Visit",
@@ -35,7 +39,7 @@ class VisitDetails(models.Model):
         "fills when he checked out from the office.",
     )
     visiting_person = fields.Many2one("hr.employee", string="Meeting With")
-    department = fields.Many2one("hr.department", string="Department")
+    department = fields.Many2one("hr.department")
     state = fields.Selection(
         [
             ("draft", "Draft"),
@@ -85,7 +89,7 @@ class PersonalBelongings(models.Model):
 
     property_name = fields.Char(string="Property", help="Employee belongings name")
     property_count = fields.Char(string="Count", help="Count of property")
-    number = fields.Integer(compute="get_number", store=True, string="Sl")
+    number = fields.Integer(compute="_compute_get_number", store=True, string="Sl")
     belongings_id_fov_visitor = fields.Many2one("fo.visit", string="Belongings")
     belongings_id_fov_employee = fields.Many2one(
         "fo.property.counter", string="Belongings"
@@ -96,14 +100,13 @@ class PersonalBelongings(models.Model):
             ("1", "Not Allowed"),
             ("2", "Allowed With Permission"),
         ],
-        "Permission",
         required=True,
         index=True,
         default="0",
     )
 
     @api.depends("belongings_id_fov_visitor", "belongings_id_fov_employee")
-    def get_number(self):
+    def _compute_get_number(self):
         for visit in self.mapped("belongings_id_fov_visitor"):
             number = 1
             for line in visit.visitor_belongings:
