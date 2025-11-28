@@ -106,21 +106,21 @@
                 <field name="visitor_image" />
                 <templates>
                     <t t-name="card" class="flex-row">
-                        <aside class="d-flex align-items-center me-2" >
-                                <img
-                                    t-attf-src="/web/image/fo.visitor/#{record.id.raw_value}/visitor_image"
-                                    t-att-alt="record.name.value"
-                                    class="o_image_64_max"
-                                />
+                        <aside class="d-flex align-items-center me-2">
+                            <img
+                                t-attf-src="/web/image/fo.visitor/#{record.id.raw_value}/visitor_image"
+                                t-att-alt="record.name.value"
+                                class="o_image_64_max"
+                            />
                         </aside>
-                            <main >
-                                <strong>
-                                    <ul class="list-unstyled">
-                                        <li>Name :<field name="name" /></li>
-                                        <li>Phone:<field name="phone" /></li>
-                                    </ul>
-                                </strong>
-                            </main>
+                        <main>
+                            <strong>
+                                <ul class="list-unstyled">
+                                    <li>Name :<field name="name" /></li>
+                                    <li>Phone:<field name="phone" /></li>
+                                </ul>
+                            </strong>
+                        </main>
                     </t>
                 </templates>
             </kanban>

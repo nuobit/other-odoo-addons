@@ -13,7 +13,7 @@
                         name="action_prop_in"
                         string="Take In"
                         type="object"
-                        invisible="state != 'check-in'"
+                        invisible="state != 'draft'"
                         class="oe_highlight"
                     />
 
@@ -28,7 +28,7 @@
                         name="action_cancel"
                         string="Cancel"
                         type="object"
-                        invisible="state in ('prop_in','prop_out','draft')"
+                        invisible="state in ('prop_in','prop_out')"
                     />
 
                     <field

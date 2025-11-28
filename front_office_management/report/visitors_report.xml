@@ -21,11 +21,8 @@
                             <b>Visitor Report</b>
                         </h3>
                         <br />
-                        <table
-                            width="100%"
-                            style="margin-left:50px;margin-top:5px;border: None solid black;"
-                        >
-                            <tr class="tr2">
+                        <table width="100%" style="margin-left:50px;margin-top:5px;">
+                            <tr class="tr2" style="border: 1px white;">
                                 <td style="width:50px;height:25px;">
                                     <span>Visitor: </span>
                                     <span t-att-style="style" t-esc="o.visitor.name" />
@@ -39,7 +36,7 @@
                                     <span t-att-style="style" t-esc="o.phone" />
                                 </td>
                             </tr>
-                            <tr class="tr2">
+                            <tr class="tr2" style="border: 1px white;">
                                 <t t-if="o.visiting_person">
                                     <td style="width:50px;height:25px;">
                                         <span>Meeting With     : </span>
@@ -65,11 +62,8 @@
                         <h4 style="margin-left:50px">
                             <b>In Out Details</b>
                         </h4>
-                        <table
-                            width="99%"
-                            style="margin-left:50px;margin-top:5px;border: None solid black;"
-                        >
-                            <tr class="tr2">
+                        <table width="99%" style="margin-left:50px;margin-top:5px;">
+                            <tr class="tr2" style="border: 1px white;">
                                 <td style="width:50px;height:25px;">
                                     <span>Check In  : </span>
                                     <span t-att-style="style" t-esc="o.check_in_date" />
@@ -88,30 +82,21 @@
                         <h4 style="margin-left:50px">
                             <b>Personal Belongings</b>
                         </h4>
-                        <table
-                            width="90%"
-                            style="border:1px solid black;margin-left:50px"
-                        >
+                        <table width="90%" style="margin-left:50px">
                             <thead>
-                                <th
-                                    style="border:1px solid black;"
-                                    width="13%"
-                                >Name</th>
-                                <th
-                                    style="border:1px solid black;"
-                                    width="13%"
-                                >Count</th>
+                                <th style="text-align:center;" width="13%">Name</th>
+                                <th style="text-align:center;" width="13%">Count</th>
                             </thead>
                             <tbody>
                                 <t t-foreach="o.visitor_belongings" t-as="l">
                                     <tr>
-                                        <td style="border:1px solid black;">
+                                        <td>
                                             <span
                                                 t-esc="l.property_name"
                                                 style="font-size:16px;"
                                             />
                                         </td>
-                                        <td style="border:1px solid black;">
+                                        <td>
                                             <span
                                                 t-esc="l.property_count"
                                                 style="font-size:16px;"
