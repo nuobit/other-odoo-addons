@@ -103,24 +103,24 @@
         <field name="arch" type="xml">
             <kanban>
                 <field name="id" />
+                <field name="visitor_image" />
                 <templates>
-                    <t t-name="kanban-box">
-                        <div class="oe_kanban_global_click">
-                            <div class="o_kanban_image">
+                    <t t-name="card" class="flex-row">
+                        <aside class="d-flex align-items-center me-2" >
                                 <img
-                                    t-att-src="kanban_image('fo.visitor', 'visitor_image', record.id.value)"
-                                    alt="Visitor Image"
+                                    t-attf-src="/web/image/fo.visitor/#{record.id.raw_value}/visitor_image"
+                                    t-att-alt="record.name.value"
+                                    class="o_image_64_max"
                                 />
-                            </div>
-                            <div class="oe_kanban_details">
+                        </aside>
+                            <main >
                                 <strong>
-                                    <ul>
+                                    <ul class="list-unstyled">
                                         <li>Name :<field name="name" /></li>
                                         <li>Phone:<field name="phone" /></li>
                                     </ul>
                                 </strong>
-                            </div>
-                        </div>
+                            </main>
                     </t>
                 </templates>
             </kanban>

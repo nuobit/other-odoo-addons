@@ -19,6 +19,7 @@ class VisitorDetails(models.Model):
     country_id = fields.Many2one("res.country", string="Country", ondelete="restrict")
     phone = fields.Char(required=True)
     email = fields.Char(required=True)
+    image = fields.Binary(string="Photo", help="Photo of the Visitor", attachment=True)
     id_proof = fields.Many2one("id.proof", string="ID Proof")
     id_proof_no = fields.Char(string="ID Number", help="Id proof number")
     company_info = fields.Many2one(

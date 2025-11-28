@@ -52,11 +52,11 @@ class VisitDetails(models.Model):
     )
 
     @api.model_create_multi
-    def create(self, vals):
-        if vals:
-            vals["name"] = self.env["ir.sequence"].next_by_code("fo.visit") or _("New")
-            result = super().create(vals)
-            return result
+    def create(self, vals_list):
+        for vals in vals_list:
+            if not vals.get("name") or vals["name"] == _("New"):
+                vals["name"] = self.env["ir.sequence"].next_by_code("fo.visit") or _("New")
+        return super(VisitDetails, self).create(vals_list)
 
     def action_cancel(self):
         self.state = "cancel"
@@ -90,9 +90,9 @@ class PersonalBelongings(models.Model):
     property_name = fields.Char(string="Property", help="Employee belongings name")
     property_count = fields.Char(string="Count", help="Count of property")
     number = fields.Integer(compute="_compute_get_number", store=True, string="Sl")
-    belongings_id_fov_visitor = fields.Many2one("fo.visit", string="Belongings")
+    belongings_id_fov_visitor = fields.Many2one("fo.visit", string="Belongingss Visitor")
     belongings_id_fov_employee = fields.Many2one(
-        "fo.property.counter", string="Belongings"
+        "fo.property.counter", string="Belongings Employee"
     )
     permission = fields.Selection(
         [

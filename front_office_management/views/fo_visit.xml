@@ -21,7 +21,7 @@
                         name="action_check_out"
                         string="Check Out"
                         type="object"
-                        invisible="state != 'check-in'"
+                        invisible="state != 'check_in'"
                         class="oe_highlight"
                     />
                     <button
