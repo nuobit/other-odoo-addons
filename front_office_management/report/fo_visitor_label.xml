@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Cybrosys Technologies - Anusha P P <odoo@cybrosys.com>
+     Copyright 2025 NuoBiT Solutions - Deniz Gallo <dgallo@nuobit.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl) -->
+<odoo>
+    <template id="report_visitor_label">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page">
+                        <div class="oe_structure" id="oe_structure_property_label" />
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-lg-6">
+                                    <table
+                                        class="table table-condensed"
+                                        style="border: 2px solid black !important; margin-top: 20px;"
+                                    >
+                                        <tr>
+                                            <td width="40%" class="row">
+                                                <div
+                                                    style="text-align:center;padding-top:10px;margin-left:5px;"
+                                                >
+                                                    <img
+                                                        t-if="not o.visitor.visitor_image"
+                                                        t-att-src="'/web/static/src/img/placeholder.png'"
+                                                        height="120"
+                                                        border="1"
+                                                        width="120"
+                                                    />
+                                                    <img
+                                                        t-if="o.visitor.visitor_image"
+                                                        t-att-src="image_data_uri(o.visitor.visitor_image)"
+                                                        alt="Visitor Photo"
+                                                        height="120"
+                                                        border="1"
+                                                        width="120"
+                                                    />
+                                                </div>
+                                                <p
+                                                    style="text-align:center; margin-top: 10px;"
+                                                >
+                                                    <strong>
+                                                        <span t-field="o.visitor" />
+                                                    </strong>
+                                                </p>
+                                            </td>
+                                            <td width="60%">
+                                                <table style="width: 100%;">
+                                                    <tr style="border: 1px white;">
+                                                        <t t-if="o.visiting_person">
+                                                            <td style="width: 40%;">
+                                                                <p
+                                                                    style="text-align:right;padding-top:10px;"
+                                                                >
+                                                                    <strong
+                                                                    >Visitor ID: </strong>
+                                                                </p>
+                                                                <p
+                                                                    style="text-align:right;"
+                                                                >
+                                                                    <strong
+                                                                    >Phone: </strong>
+                                                                </p>
+                                                                <p
+                                                                    style="text-align:right;"
+                                                                >
+                                                                    <strong
+                                                                    >Meeting With: </strong>
+                                                                </p>
+                                                                <p
+                                                                    style="text-align:right;"
+                                                                >
+                                                                    <strong
+                                                                    >Department: </strong>
+                                                                </p>
+                                                            </td>
+                                                            <td style="width: 60%;">
+                                                                <p
+                                                                    style="text-align:left;padding-top:10px;padding-left:10px;"
+                                                                    t-field="o.name"
+                                                                />
+                                                                <p
+                                                                    style="text-align:left;padding-left:10px;"
+                                                                    t-field="o.phone"
+                                                                />
+                                                                <p
+                                                                    style="text-align:left;padding-left:10px;"
+                                                                    t-field="o.visiting_person"
+                                                                />
+                                                                <p
+                                                                    style="text-align:left;padding-left:10px;"
+                                                                    t-field="o.department"
+                                                                />
+                                                            </td>
+                                                        </t>
+                                                        <t t-if="not o.visiting_person">
+                                                            <td style="width: 40%;">
+                                                                <p
+                                                                    style="text-align:right;padding-top:30px;"
+                                                                >
+                                                                    <strong
+                                                                    >Visitor ID: </strong>
+                                                                </p>
+                                                                <p
+                                                                    style="text-align:right;padding-top:30px;"
+                                                                >
+                                                                    <strong
+                                                                    >Phone: </strong>
+                                                                </p>
+                                                            </td>
+                                                            <td style="width: 60%;">
+                                                                <p
+                                                                    style="text-align:left;padding-top:30px;padding-left:10px;"
+                                                                    t-field="o.visitor"
+                                                                />
+                                                                <p
+                                                                    style="text-align:left;padding-top:30px;padding-left:10px;"
+                                                                    t-field="o.phone"
+                                                                />
+                                                            </td>
+                                                        </t>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
