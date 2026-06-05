@@ -106,7 +106,7 @@
                             <div class="oe_kanban_global_click">
                                 <div class="o_kanban_image">
                                     <img
-                    t-att-src="kanban_image('fo.visitor', 'visitor_image', record.id.value)"
+                    t-att-src="kanban_image('fo.visitor', 'visitor_image', record.id.raw_value)"
                     alt="Visitor Image"
                   />
                                 </div>
